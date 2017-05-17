@@ -6,4 +6,6 @@ applications:
 env:
   CORS_ALLOW_HEADERS: "['Content-Type', 'Authorization', 'Access-Control-Allow-Origin']"
   CORS_ORIGINS: "['http://alerta.cfapps.pez.pivotal.io/', 'http://alerta-explorer.cfapps.pez.pivotal.io/' ]"
-  MONGO_URI: mongodb://mongo-e9683332-1.d17329bd.cont.dockerapp.io:32770/monitoring
+  MONGO_URI: 'mongodb://alerta-db-1.1b4b5e12.cont.dockerapp.io:32768/monitoring'
+  # endpoint: http://localhost/api
+  # key: nKefJ6z/lj+ixr++v6bxZpZH1f41U8gclr+NMii4
