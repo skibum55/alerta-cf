@@ -1,0 +1,9 @@
+---
+applications:
+- name: alertad
+  memory: 512M
+  buildpack: python_buildpack
+env:
+  CORS_ALLOW_HEADERS: "['Content-Type', 'Authorization', 'Access-Control-Allow-Origin']"
+  CORS_ORIGINS: "['http://alerta.cfapps.pez.pivotal.io/', 'http://alerta-explorer.cfapps.pez.pivotal.io/' ]"
+  MONGO_URI: mongodb://mongo-e9683332-1.d17329bd.cont.dockerapp.io:32770/monitoring
